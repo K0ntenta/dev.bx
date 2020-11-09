@@ -1,6 +1,6 @@
 <?php
 
-require_once('read_1.php');
+require('read_1.php');
 
 $array=readFromConsole();
 $result=array_sum($array);
