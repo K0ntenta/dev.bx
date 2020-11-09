@@ -1,16 +1,17 @@
 <?php
 
-require('./read.php');
+require('read_2.php');
 
 echo 'Тесты:'.PHP_EOL;
 readFromConsoleTest();
 
 echo PHP_EOL.'Введите данные для проверки: '.PHP_EOL;
-$funcResult=readFromConsole(trim(fgets(STDIN)));
+$funcResult=readFromConsole();
+
 echo 'Ожидаемый результат: '.PHP_EOL;
 $myResult=trim(fgets(STDIN));
 
-function assertEquals($myResult,$funcResult){
+function assertEquals($myResult,$funcResult):string{
     if ($myResult==$funcResult){
         return 'test passed';
     }
