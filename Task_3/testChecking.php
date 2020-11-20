@@ -23,9 +23,9 @@ function testChecking($test){
 		echo 'Glina - incorrect'.PHP_EOL;
 	}
 	if (
-		$result['files']['Mathcad Document.xmcd']['is_readable'] === true &&
-		$result['files']['Mathcad Document.xmcd']['is_writeable'] === true &&
-		$result['files']['Mathcad Document.xmcd']['filesize'] === 4214606
+		$result['files']['Лист.xlsx']['is_readable'] === true &&
+		$result['files']['Лист.xlsx']['is_writeable'] === true &&
+		$result['files']['Лист.xlsx']['filesize'] === 6561
 	)
 	{
 		echo 'Mathcad Document - correct'.PHP_EOL;
@@ -35,9 +35,9 @@ function testChecking($test){
 		echo 'Mathcad Document - incorrect'.PHP_EOL;
 	}
 	if (
-		$result['files']['Новый точечный рисунок.bmp']['is_readable'] === true &&
-		$result['files']['Новый точечный рисунок.bmp']['is_writeable'] === true &&
-		$result['files']['Новый точечный рисунок.bmp']['filesize'] === 4214606
+		$result['files']['Рисунок.bmp']['is_readable'] === true &&
+		$result['files']['Рисунок.bmp']['is_writeable'] === true &&
+		$result['files']['Рисунок.bmp']['filesize'] === 4214606
 	)
 	{
 		echo 'Новый точечный рисунок - correct'.PHP_EOL;
